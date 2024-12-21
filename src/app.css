@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: minmax(0, 250px) 1fr;
+    height: 100dvh;
+    padding: 32px;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-right: 1px solid #e0e0e0;
+
+    .selected {
+        font-weight: bold
+    }
+}
